@@ -53,11 +53,13 @@ Core contributors. See some of our [previous hosts](/meetings-hosts/).
     <tr>
       <div class="home-posts-post">
         <td class="Home-posts-post-date">{{ post.date | date_to_string }}</td>
-        <td><a class="Home-posts-post-title" href="{{ post.url }}">{{ post.pr }} {{ post.title }}</a>
-        ({{components}})
-        <span class="host">hosted by
-        <a class="host" href="/meetings-hosts/#{{post.host}}">{{ post.host }}</a>
-        </span></td>
+        <td>
+          <a class="Home-posts-post-title" href="{{ post.url }}">{{ post.pr }} {{ post.title }}</a>
+          ({{components}})
+          <span class="host">hosted by
+            <a class="host" href="/meetings-hosts/#{{post.host}}">{{ post.host }}</a>
+          </span>
+        </td>
       </div>
     </tr>
   {%- endif -%}
@@ -88,9 +90,13 @@ volunteer hosts to lead the discussion:
     <tr>
       <div class="home-posts-post">
         <td class="Home-posts-post-date">{{ post.date | date_to_string }}</td>
-        <td><a class="home-posts-post-title" href="{{ post.url }}">{{ post.pr }} {{ post.title }}</a>
-        ({{components}})
-        <span class="host">hosted by <a class="host" href="/meetings-hosts/#{{post.host}}">{{ post.host }}</a></span></td>
+        <td>
+          <a class="home-posts-post-title" href="{{ post.url }}">{{ post.pr }} {{ post.title }}</a>
+          ({{components}})
+          <span class="host">hosted by
+            <a class="host" href="/meetings-hosts/#{{post.host}}">{{ post.host }}</a>
+          </span>
+        </td>
       </div>
     </tr>
   {%- endif -%}
