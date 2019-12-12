@@ -34,11 +34,8 @@ permalink: /meetings-components/
                 <td class="Home-posts-post-date">
                   {{ post.date | date_to_string }}
                 </td>
-                <td class="Home-posts-post-arrow">
-                  &raquo;
-                </td>
                 <td>
-                  <a class="Home-posts-post-title" href="{{ post.url }}">#{{ post.pr }} {{ post.title }}</a>
+                  <a class="Home-posts-post-title" href="{{ post.url }}">{{ post.pr }} {{ post.title }}</a>
                   <span class="host">
                     hosted by
                     <a class="host" href="/meetings-hosts/#{{post.host}}">{{ post.host }}</a>
